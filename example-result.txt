@@ -1,0 +1,175 @@
+- dblp required
+ - phdthesis multiple [Attrs=mdate|required, key|required, publtype|enum[withdrawn]]
+  - author multiple [Attrs=orcid]
+  - title required
+   - sup rarely [Texts=['2', '+']]
+   - sub rarely [Texts=['1-x', 'x']]
+   - i rarely
+  - year multiple
+  - school multiple
+  - pages
+  - isbn [Attrs=type|enum[print; online]]
+  - ee multiple [Attrs=type|enum[oa; archive]]
+  - publisher
+  - note [Attrs=type|enum[source; disstype; affiliation]]
+  - series rarely [Attrs=href]
+  - volume rarely
+  - month rarely [Texts=['September', 'April']]
+  - number rarely [Texts=['DS-96-3', 'LBL-32883', '11045']]
+ - book multiple [Attrs=mdate|required, key|required, publtype|enum[habil; withdrawn; informal]]
+  - author multiple [Attrs=orcid, bibtex|enum[The {Univalent Foundations Program}]]
+  - title required
+   - sup rarely [Texts=['nd', 'rd', '®', 'TM']]
+   - i rarely [Texts=['CAD/CAM', 'NC']]
+   - sub rarely [Texts=['n', '∞']]
+  - year required
+  - school
+  - ee [Attrs=type|enum[oa; archive]]
+  - note rarely [Attrs=type|enum[source; disstype; isbn]]
+  - publisher [Attrs=href]
+  - pages
+  - isbn multiple [Attrs=type|enum[print; online]]
+  - series [Attrs=href]
+  - volume
+  - editor [Attrs=orcid]
+  - url
+  - booktitle
+  - crossref rarely
+  - cite [Attrs=label]
+  - month rarely [Texts=['April']]
+  - cdrom rarely [Texts=['Wiederhold/toc.html']]
+ - mastersthesis multiple [Attrs=mdate|required|enum[2019-07-26; 2019-07-16; 2017-12-26; 2020-07-21; 2002-01-03; 2018-06-13; 2020-03-12], key|required]
+  - author required
+  - title required
+  - year required [Texts=['2011', '1994', '1991', '2013', '1984', '1997', '2006', '1992', '2009', '2007']]
+  - school required
+  - ee [Attrs=type|enum[oa]]
+  - note [Attrs=type|enum[source]]
+ - incollection multiple [Attrs=mdate|required, key|required, publtype|enum[withdrawn; encyclopedia]]
+  - author multiple [Attrs=orcid]
+  - title required
+   - i rarely
+   - sup rarely
+    - i rarely [Texts=['TR', 'perf', 'k']]
+   - sub rarely
+    - i rarely [Texts=['θ']]
+    - sup rarely [Texts=['n']]
+  - pages
+  - year required
+  - booktitle required
+  - ee [Attrs=type|enum[oa; archive]]
+  - crossref
+  - url required
+  - cdrom rarely
+  - publisher rarely [Attrs=href|enum[db/publishers/mkp.html]]
+  - note rarely
+  - number rarely [Texts=['Theory', 'and']]
+  - cite rarely [Attrs=label]
+  - chapter rarely [Texts=['27', '21']]
+ - inproceedings multiple [Attrs=mdate|required, key|required, publtype|enum[withdrawn; informal]]
+  - author multiple [Attrs=orcid, aux|enum[a1; a2]]
+  - title required [Attrs=bibtex]
+   - sub rarely
+    - i
+    - sup rarely
+     - i [Texts=['m', 'n']]
+    - sub rarely [Texts=['2', '2(x)', 'n', '3,']]
+   - sup rarely
+    - i rarely
+    - sup rarely [Texts=['TM', 'm)', '1/3', 'n', 'h', '^', '6', '1-(1/d)']]
+    - sub rarely [Texts=['n/1', '~']]
+   - i rarely
+    - sup rarely
+    - sub rarely
+    - i rarely [Texts=['L']]
+   - tt rarely [Texts=['k', 'Prop', 'dlv']]
+  - pages
+  - year required
+  - booktitle required
+  - ee multiple [Attrs=type|enum[oa; archive; archive oa]]
+  - crossref
+  - url required
+  - note rarely [Attrs=type|enum[doi]]
+  - cdrom rarely
+  - cite rarely [Attrs=label]
+  - editor rarely [Attrs=orcid|required|enum[0000-0002-6904-9692; 0000-0002-6332-6118]]
+  - number rarely [Texts=['Theory', 'Computation', 'Generators', '1', '2']]
+  - volume rarely [Texts=['48', '335']]
+  - month rarely [Texts=['January']]
+ - proceedings multiple [Attrs=mdate|required, key|required, publtype|enum[informal; withdrawn]]
+  - editor multiple [Attrs=orcid]
+  - title required
+   - sup rarely
+   - sub rarely [Texts=['E']]
+   - i rarely [Texts=['and', 'i*', 'i']]
+  - booktitle
+  - year required
+  - publisher [Attrs=href|enum[db/publishers/mkp.html]]
+  - isbn [Attrs=type|enum[print; electronic; usb; online]]
+  - series [Attrs=href]
+  - volume
+  - ee multiple [Attrs=type|enum[oa; archive; archive oa]]
+  - url
+  - note rarely [Attrs=type|enum[info; isbn]]
+  - number rarely
+  - author rarely
+  - journal rarely [Texts=['SIGMOD Rec.', 'SIGMOD Record']]
+  - cite rarely [Attrs=label|required]
+  - pages rarely [Texts=['1-528', '270', '336', '355', '280', '236', 'I-XV, 1-321', 'i-xii, 1-558']]
+  - address rarely [Texts=['New York']]
+ - article multiple [Attrs=mdate|required, key|required, publtype|enum[informal; withdrawn; informal withdrawn; data; edited; software; survey], cdate|enum[2018-03-09]]
+  - title required [Attrs=bibtex]
+   - sub rarely
+    - i rarely
+     - sup rarely [Texts=['m']]
+     - i rarely [Texts=['F']]
+    - sub rarely
+     - sub rarely [Texts=['1, G']]
+      - sub required [Texts=['2/1']]
+     - i rarely [Texts=['j']]
+    - sup rarely
+     - sub rarely [Texts=['2, 3']]
+     - i rarely [Texts=['n', 'm']]
+    - tt rarely [Texts=['B']]
+   - sup rarely
+    - i rarely
+     - i rarely [Texts=['p']]
+    - sup rarely
+     - i rarely [Texts=['d', 'k', 'w']]
+     - sup rarely [Texts=['2=1', 'b=y']]
+      - sup [Texts=['n']]
+    - sub rarely
+     - i rarely [Texts=['r']]
+   - i rarely
+    - sub rarely
+     - sup rarely [Texts=['n', 'm', '2']]
+    - sup rarely
+     - sup rarely [Texts=['k']]
+    - i rarely
+   - tt rarely
+  - author multiple [Attrs=orcid, aux|enum[test]]
+  - journal
+  - volume
+  - month rarely
+  - year
+  - url
+  - note rarely [Attrs=type|enum[doi; reviewid; rating]]
+  - editor rarely [Attrs=orcid|enum[0000-0002-9357-4526; 0000-0002-6901-8319]]
+  - ee multiple [Attrs=type|enum[oa; archive; archive oa]]
+  - publisher rarely
+  - cdrom rarely
+  - pages
+  - number
+  - cite rarely [Attrs=label]
+  - crossref rarely
+  - booktitle rarely
+ - www multiple [Attrs=mdate|required, key|required, publtype|enum[disambiguation; noshow; group]]
+  - author multiple [Attrs=bibtex]
+  - title
+  - note rarely [Attrs=type|enum[affiliation; uname; isnot; award], label]
+  - url [Attrs=type|enum[archive; deprecated]]
+  - crossref rarely
+  - cite rarely
+  - ee rarely
+  - year rarely [Texts=['2006', '1995', '1998', '2001', '1999', '1997', '2012', '1993', '2003']]
+  - editor rarely
